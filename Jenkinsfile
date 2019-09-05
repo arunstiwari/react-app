@@ -1,7 +1,5 @@
 pipeline{
 	agent {label 'macos'}
-pipeline{
-	agent {label 'macos'}
   tools { nodejs 'node' }
 	stages{
 		stage('Install dependencies') {
