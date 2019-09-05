@@ -39,7 +39,7 @@ pipeline{
                 }
 		stage('Build Docker Image'){
 		    steps {
-                        sh 'docker build -t react-demo:1.0 .'
+                        sh 'sudo docker build -t react-demo:1.0 .'
                     }
                 }
 	  }
