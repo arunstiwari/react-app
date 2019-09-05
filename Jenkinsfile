@@ -30,10 +30,12 @@ pipeline{
                     steps {
 	                 // Optionally use a Maven environment you've configured already
 			 sh '${scannerHome}/bin/sonar-scanner -Dsonar.host.url=http://54.72.251.138:9000 -Dsonar.projectKey=react-redux -Dsonar.sources=src'
+			
+			 timeout(time: 10, unit: 'MINUTES') {
+                             waitForQualityGate abortPipeline: true
+                         }   
                     }
-		   timeout(time: 10, unit: 'MINUTES') {
-                        waitForQualityGate abortPipeline: true
-                   }
+		   
                 }
 		stage('Build Docker Image'){
 		    steps {
