@@ -59,6 +59,9 @@
     "collectCoverageFrom": [
       "src/**/{!(serviceWorker.js),}.js",
       "!src/index.js"
-    ]
-  }
+    ],
+    "coverageReporters": [
+      "text",
+      "cobertura"
+    ]  }
 }
