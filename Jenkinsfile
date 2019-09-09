@@ -1,5 +1,8 @@
 pipeline{
 	agent {label 'mac'}
+	options {
+	   buildDiscarder(logRotator(numToKeepStr: '1'))
+	}
   tools { nodejs 'node' }
 	stages{
 		stage('Install dependencies') {
