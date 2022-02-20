@@ -1,5 +1,21 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+"devDependencies": {
+"eslint-config-airbnb": "^18.0.1",
+"eslint-config-prettier": "^6.0.0",
+"eslint-plugin-import": "^2.18.2",
+"eslint-plugin-jest": "^22.15.1",
+"eslint-plugin-jsx-a11y": "^6.2.3",
+"eslint-plugin-prettier": "^3.1.0",
+"eslint-plugin-react": "^7.14.3",
+"husky": "^3.0.4",
+"lint-staged": "^9.2.3",
+"prettier": "^1.18.2",
+"pretty-quick": "^1.11.1",
+"redux-mock-store": "^1.5.3"
+},
+
+
 ## Available Scripts
 
 In the project directory, you can run:
