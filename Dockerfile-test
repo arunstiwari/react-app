@@ -1,0 +1,9 @@
+ARG TAG=17.5.0-alpine
+FROM node:$TAG as STAGE1
+MAINTAINER arunstiwari@gmail.com
+WORKDIR app
+COPY package.json .
+COPY public public
+COPY src  src
+
+RUN npm install && npm run coverage
